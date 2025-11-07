@@ -1,0 +1,21 @@
+# Archivos y carpetas generadas por Quartus y simuladores
+    
+    # Ignorar archivos de simulación de Quartus/ModelSim
+    *.bak
+    *.cmp
+    *.rpt
+    *.sft
+    *.qws
+    *.cdf
+    *.v.bak
+    *.vhd.bak
+    
+    # Directorios de simulación y caché
+    /db/ # <-- ESTO IGNORA EL ARCHIVO .flock QUE TE DA PROBLEMAS
+    /incremental_db/
+    /output_files/
+    /simulation/
+    /work/
+    /qsim/
+    ```
+    eof

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\caca\tateti\simulation\qsim
+vtateti
+Z1 I4i71JoUID>6eXl26_V0ab0
+Z2 V_j^Q;XZ<H1Ni71SPnSgSM2
+Z3 dC:\altera\tateti\simulation\qsim
+Z4 w1762453359
+Z5 8tateti.vo
+Z6 Ftateti.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|tateti.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 V44E?BFjNOM1hkM^;MH`z3
+!s85 0
+Z11 !s108 1762453359.702000
+Z12 !s107 tateti.vo|
+!s101 -O0
+vtateti_vlg_check_tst
+!i10b 1
+!s100 mJo2>32J;Z[PlIb9B5Wle2
+Ic8:4;UM?D4zWUYAOz]3Kb3
+Z13 V^:?64e@e]G_6lleTh0bfm3
+R3
+Z14 w1762453358
+Z15 8tateti.vt
+Z16 Ftateti.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1762453359.741000
+Z18 !s107 tateti.vt|
+Z19 !s90 -work|work|tateti.vt|
+!s101 -O0
+R9
+vtateti_vlg_sample_tst
+!i10b 1
+!s100 SYGbVJ;JhkDZZzMgWM?Z51
+IL<49l]S0X28XZ1YL]M8Mf2
+VkIIDWSHkWKmgflG]4f[Um2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+vtateti_vlg_vec_tst
+!i10b 1
+!s100 QRjeWjCAZ=1dSc=anC;a;2
+IHk8N8^XPWij]N]OEJ[Pd22
+Z20 VN[55^8YX[fYgGGe7;DmlR0
+R3
+R14
+R15
+R16
+L0 158
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9

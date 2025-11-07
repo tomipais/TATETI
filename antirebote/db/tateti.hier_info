@@ -1,0 +1,22 @@
+|tateti
+reset => reg_fstate.ceroestable.OUTPUTSELECT
+reset => reg_fstate.unoestable.OUTPUTSELECT
+reset => reg_fstate.preguntauno.OUTPUTSELECT
+reset => reg_fstate.preguntacero.OUTPUTSELECT
+reset => reg_z.OUTPUTSELECT
+reset => z.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => Selector0.IN1
+x => Selector3.IN1
+x => Selector1.IN1
+x => Selector2.IN1
+T => process_1.IN1
+T => process_1.IN1
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+

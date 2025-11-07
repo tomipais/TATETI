@@ -1,0 +1,7 @@
+
+State Machine - |tateti|fstate
+Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
+fstate.unoestable 0 0 0 0 
+fstate.ceroestable 0 0 1 1 
+fstate.preguntauno 0 1 0 1 
+fstate.preguntacero 1 0 0 1 
