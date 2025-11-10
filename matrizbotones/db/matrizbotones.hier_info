@@ -1,0 +1,39 @@
+|matrizbotones
+fila[0] => Mux0.IN259
+fila[0] => Mux1.IN259
+fila[0] => Mux2.IN259
+fila[0] => Mux3.IN259
+fila[1] => Mux0.IN258
+fila[1] => Mux1.IN258
+fila[1] => Mux2.IN258
+fila[1] => Mux3.IN258
+fila[2] => Mux0.IN257
+fila[2] => Mux1.IN257
+fila[2] => Mux2.IN257
+fila[2] => Mux3.IN257
+fila[3] => Mux0.IN256
+fila[3] => Mux1.IN256
+fila[3] => Mux2.IN256
+fila[3] => Mux3.IN256
+c3 => Mux0.IN260
+c3 => Mux1.IN260
+c3 => Mux2.IN260
+c3 => Mux3.IN260
+c2 => Mux0.IN261
+c2 => Mux1.IN261
+c2 => Mux2.IN261
+c2 => Mux3.IN261
+c1 => Mux0.IN262
+c1 => Mux1.IN262
+c1 => Mux2.IN262
+c1 => Mux3.IN262
+c0 => Mux0.IN263
+c0 => Mux1.IN263
+c0 => Mux2.IN263
+c0 => Mux3.IN263
+posicion[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+posicion[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+posicion[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+posicion[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
