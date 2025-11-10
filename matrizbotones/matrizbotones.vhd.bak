@@ -1,0 +1,43 @@
+library ieee;
+use ieee. std_logic_1164.all;
+
+entity matrizbotones is
+	port(
+		fila : in std_logic_vector(3 downto 0);
+		columna : in std_logic_vector(3 downto 0);
+		posicion : out unsigned(3 downto 0); 
+	);
+
+architecture recorrermatriz of matrizbotones is
+	signal x<= fila&columna	
+	begin
+	
+		recorre: process (x) is 
+			
+			case x is
+				
+				when "00010001" => posicion<="1111"
+				when "00010010" => posicion<="1110"
+				when "00010100" => posicion<="1101"
+				when "00011000" => posicion<="1100"
+				when "00100001" => posicion<="1011"
+				when "00100010" => posicion<="1010"
+				when "00100100" => posicion<="1001"
+				when "00101000" => posicion<="1000"
+				when "01000001" => posicion<="0111"
+				when "01000010" => posicion<="0110"
+				when "01000100" => posicion<="0101"
+				when "01001000" => posicion<="0100"
+				when "10000001" => posicion<="0011"
+				when "10000010" => posicion<="0010"
+				when "10000100" => posicion<="0001"
+				when "10001000" => posicion<="0000"
+				
+
+		
+			
+		end process recorre;
+	
+	
+	
+	end recorrermatriz;

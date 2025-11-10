@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PanelLed">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Tateti_Top|mi_pll:U0_PLL|altpll:altpll_component" CBX_FILE_NAME="mi_pll_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

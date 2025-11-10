@@ -1,0 +1,9 @@
+
+State Machine - |Tateti_Top|ws2812_driver:U2_WS2812_Driver|s_state
+Name s_state.S_LATCH s_state.S_T1_LOW s_state.S_T0_LOW s_state.S_T_HIGH s_state.S_SHIFT s_state.S_IDLE 
+s_state.S_IDLE 0 0 0 0 0 0 
+s_state.S_SHIFT 0 0 0 0 1 1 
+s_state.S_T_HIGH 0 0 0 1 0 1 
+s_state.S_T0_LOW 0 0 1 0 0 1 
+s_state.S_T1_LOW 0 1 0 0 0 1 
+s_state.S_LATCH 1 0 0 0 0 1 

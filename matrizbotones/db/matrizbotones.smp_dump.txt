@@ -1,0 +1,11 @@
+
+State Machine - |botonera|fstate
+Name fstate.fijo3 fstate.fijo2 fstate.fijo1 fstate.fijo0 fstate.In1 fstate.In3 fstate.In2 fstate.In0 
+fstate.In0 0 0 0 0 0 0 0 0 
+fstate.In2 0 0 0 0 0 0 1 1 
+fstate.In3 0 0 0 0 0 1 0 1 
+fstate.In1 0 0 0 0 1 0 0 1 
+fstate.fijo0 0 0 0 1 0 0 0 1 
+fstate.fijo1 0 0 1 0 0 0 0 1 
+fstate.fijo2 0 1 0 0 0 0 0 1 
+fstate.fijo3 1 0 0 0 0 0 0 1 

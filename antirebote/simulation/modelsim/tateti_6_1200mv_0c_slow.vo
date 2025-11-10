@@ -1,0 +1,222 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "11/06/2025 13:09:05"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module tateti (
+	reset,
+	clock,
+	x,
+	z);
+input 	reset;
+input 	clock;
+input 	x;
+output 	z;
+
+// Design Ports Information
+// z	=>  Location: PIN_138,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_137,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// x	=>  Location: PIN_136,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clock	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("tateti_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \x~input_o ;
+wire \clock~input_o ;
+wire \clock~inputclkctrl_outclk ;
+wire \z~output_o ;
+wire \reset~input_o ;
+wire \reg_fstate.uno~0_combout ;
+wire \fstate.uno~q ;
+wire \reg_fstate.verificauno~0_combout ;
+wire \fstate.verificauno~q ;
+wire \z~0_combout ;
+
+
+// Location: IOIBUF_X9_Y24_N8
+cycloneive_io_ibuf \x~input (
+	.i(x),
+	.ibar(gnd),
+	.o(\x~input_o ));
+// synopsys translate_off
+defparam \x~input .bus_hold = "false";
+defparam \x~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \clock~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clock~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clock~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \clock~inputclkctrl .clock_type = "global clock";
+defparam \clock~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N9
+cycloneive_io_obuf \z~output (
+	.i(\z~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\z~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \z~output .bus_hold = "false";
+defparam \z~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y24_N1
+cycloneive_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X8_Y23_N28
+cycloneive_lcell_comb \reg_fstate.uno~0 (
+// Equation(s):
+// \reg_fstate.uno~0_combout  = (\x~input_o  & (!\reset~input_o  & !\fstate.uno~q ))
+
+	.dataa(\x~input_o ),
+	.datab(\reset~input_o ),
+	.datac(\fstate.uno~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\reg_fstate.uno~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \reg_fstate.uno~0 .lut_mask = 16'h0202;
+defparam \reg_fstate.uno~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X8_Y23_N29
+dffeas \fstate.uno (
+	.clk(\clock~inputclkctrl_outclk ),
+	.d(\reg_fstate.uno~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fstate.uno~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fstate.uno .is_wysiwyg = "true";
+defparam \fstate.uno .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X8_Y23_N0
+cycloneive_lcell_comb \reg_fstate.verificauno~0 (
+// Equation(s):
+// \reg_fstate.verificauno~0_combout  = (\x~input_o  & (!\reset~input_o  & \fstate.uno~q ))
+
+	.dataa(\x~input_o ),
+	.datab(gnd),
+	.datac(\reset~input_o ),
+	.datad(\fstate.uno~q ),
+	.cin(gnd),
+	.combout(\reg_fstate.verificauno~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \reg_fstate.verificauno~0 .lut_mask = 16'h0A00;
+defparam \reg_fstate.verificauno~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X8_Y23_N1
+dffeas \fstate.verificauno (
+	.clk(\clock~inputclkctrl_outclk ),
+	.d(\reg_fstate.verificauno~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fstate.verificauno~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fstate.verificauno .is_wysiwyg = "true";
+defparam \fstate.verificauno .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X8_Y23_N10
+cycloneive_lcell_comb \z~0 (
+// Equation(s):
+// \z~0_combout  = (!\reset~input_o  & \fstate.verificauno~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\reset~input_o ),
+	.datad(\fstate.verificauno~q ),
+	.cin(gnd),
+	.combout(\z~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \z~0 .lut_mask = 16'h0F00;
+defparam \z~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign z = \z~output_o ;
+
+endmodule
