@@ -1,5 +1,5 @@
 
-State Machine - |botonera|fstate
+State Machine - |Block1|botonera:inst|fstate
 Name fstate.fijo3 fstate.fijo2 fstate.fijo1 fstate.fijo0 fstate.In1 fstate.In3 fstate.In2 fstate.In0 
 fstate.In0 0 0 0 0 0 0 0 0 
 fstate.In2 0 0 0 0 0 0 1 1 
@@ -9,3 +9,31 @@ fstate.fijo0 0 0 0 1 0 0 0 1
 fstate.fijo1 0 0 1 0 0 0 0 1 
 fstate.fijo2 0 1 0 0 0 0 0 1 
 fstate.fijo3 1 0 0 0 0 0 0 1 
+
+State Machine - |Block1|tateti:inst6|fstate
+Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
+fstate.unoestable 0 0 0 0 
+fstate.ceroestable 0 0 1 1 
+fstate.preguntauno 0 1 0 1 
+fstate.preguntacero 1 0 0 1 
+
+State Machine - |Block1|tateti:inst5|fstate
+Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
+fstate.unoestable 0 0 0 0 
+fstate.ceroestable 0 0 1 1 
+fstate.preguntauno 0 1 0 1 
+fstate.preguntacero 1 0 0 1 
+
+State Machine - |Block1|tateti:inst4|fstate
+Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
+fstate.unoestable 0 0 0 0 
+fstate.ceroestable 0 0 1 1 
+fstate.preguntauno 0 1 0 1 
+fstate.preguntacero 1 0 0 1 
+
+State Machine - |Block1|tateti:inst3|fstate
+Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
+fstate.unoestable 0 0 0 0 
+fstate.ceroestable 0 0 1 1 
+fstate.preguntauno 0 1 0 1 
+fstate.preguntacero 1 0 0 1 

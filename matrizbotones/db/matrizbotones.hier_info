@@ -1,4 +1,164 @@
-|matrizbotones
+|Block1
+columna0 <= tateti:inst3.z
+reloj => tateti:inst3.clock
+reloj => contador_20ms:inst1.clk_50mhz
+reloj => tateti:inst4.clock
+reloj => tateti:inst5.clock
+reloj => tateti:inst6.clock
+reloj => botonera:inst.clock
+entrada0 => tateti:inst3.x
+columna1 <= col1.DB_MAX_OUTPUT_PORT_TYPE
+entrada1 => tateti:inst4.x
+columna2 <= col2.DB_MAX_OUTPUT_PORT_TYPE
+entrada2 => tateti:inst5.x
+columna3 <= col3.DB_MAX_OUTPUT_PORT_TYPE
+entrada3 => tateti:inst6.x
+pin_name1 <= 20.DB_MAX_OUTPUT_PORT_TYPE
+Posicion[0] <= matrizbotones:inst2.posicion[0]
+Posicion[1] <= matrizbotones:inst2.posicion[1]
+Posicion[2] <= matrizbotones:inst2.posicion[2]
+Posicion[3] <= matrizbotones:inst2.posicion[3]
+Z[3] <= botonera:inst.Z[3]
+Z[2] <= botonera:inst.Z[2]
+Z[1] <= botonera:inst.Z[1]
+Z[0] <= botonera:inst.Z[0]
+
+
+|Block1|tateti:inst3
+reset => reg_fstate.ceroestable.OUTPUTSELECT
+reset => reg_fstate.unoestable.OUTPUTSELECT
+reset => reg_fstate.preguntauno.OUTPUTSELECT
+reset => reg_fstate.preguntacero.OUTPUTSELECT
+reset => reg_z.OUTPUTSELECT
+reset => z.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => Selector0.IN1
+x => Selector3.IN1
+x => Selector1.IN1
+x => Selector2.IN1
+T => process_1.IN1
+T => process_1.IN1
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|contador_20ms:inst1
+clk_50mhz => tick_20ms~reg0.CLK
+clk_50mhz => count_reg[0].CLK
+clk_50mhz => count_reg[1].CLK
+clk_50mhz => count_reg[2].CLK
+clk_50mhz => count_reg[3].CLK
+clk_50mhz => count_reg[4].CLK
+clk_50mhz => count_reg[5].CLK
+clk_50mhz => count_reg[6].CLK
+clk_50mhz => count_reg[7].CLK
+clk_50mhz => count_reg[8].CLK
+clk_50mhz => count_reg[9].CLK
+clk_50mhz => count_reg[10].CLK
+clk_50mhz => count_reg[11].CLK
+clk_50mhz => count_reg[12].CLK
+clk_50mhz => count_reg[13].CLK
+clk_50mhz => count_reg[14].CLK
+clk_50mhz => count_reg[15].CLK
+clk_50mhz => count_reg[16].CLK
+clk_50mhz => count_reg[17].CLK
+clk_50mhz => count_reg[18].CLK
+clk_50mhz => count_reg[19].CLK
+reset => tick_20ms~reg0.ACLR
+reset => count_reg[0].ACLR
+reset => count_reg[1].ACLR
+reset => count_reg[2].ACLR
+reset => count_reg[3].ACLR
+reset => count_reg[4].ACLR
+reset => count_reg[5].ACLR
+reset => count_reg[6].ACLR
+reset => count_reg[7].ACLR
+reset => count_reg[8].ACLR
+reset => count_reg[9].ACLR
+reset => count_reg[10].ACLR
+reset => count_reg[11].ACLR
+reset => count_reg[12].ACLR
+reset => count_reg[13].ACLR
+reset => count_reg[14].ACLR
+reset => count_reg[15].ACLR
+reset => count_reg[16].ACLR
+reset => count_reg[17].ACLR
+reset => count_reg[18].ACLR
+reset => count_reg[19].ACLR
+tick_20ms <= tick_20ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|tateti:inst4
+reset => reg_fstate.ceroestable.OUTPUTSELECT
+reset => reg_fstate.unoestable.OUTPUTSELECT
+reset => reg_fstate.preguntauno.OUTPUTSELECT
+reset => reg_fstate.preguntacero.OUTPUTSELECT
+reset => reg_z.OUTPUTSELECT
+reset => z.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => Selector0.IN1
+x => Selector3.IN1
+x => Selector1.IN1
+x => Selector2.IN1
+T => process_1.IN1
+T => process_1.IN1
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|tateti:inst5
+reset => reg_fstate.ceroestable.OUTPUTSELECT
+reset => reg_fstate.unoestable.OUTPUTSELECT
+reset => reg_fstate.preguntauno.OUTPUTSELECT
+reset => reg_fstate.preguntacero.OUTPUTSELECT
+reset => reg_z.OUTPUTSELECT
+reset => z.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => Selector0.IN1
+x => Selector3.IN1
+x => Selector1.IN1
+x => Selector2.IN1
+T => process_1.IN1
+T => process_1.IN1
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|tateti:inst6
+reset => reg_fstate.ceroestable.OUTPUTSELECT
+reset => reg_fstate.unoestable.OUTPUTSELECT
+reset => reg_fstate.preguntauno.OUTPUTSELECT
+reset => reg_fstate.preguntacero.OUTPUTSELECT
+reset => reg_z.OUTPUTSELECT
+reset => z.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => Selector0.IN1
+x => Selector3.IN1
+x => Selector1.IN1
+x => Selector2.IN1
+T => process_1.IN1
+T => process_1.IN1
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+T => reg_fstate.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|matrizbotones:inst2
 fila[0] => Mux0.IN259
 fila[0] => Mux1.IN259
 fila[0] => Mux2.IN259
@@ -35,5 +195,36 @@ posicion[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 posicion[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 posicion[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 posicion[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|botonera:inst
+reset => fstate~3.DATAIN
+clock => fstate~1.DATAIN
+x0 => process_1.IN0
+x0 => reg_fstate.DATAA
+x0 => process_1.IN0
+x0 => process_1.IN0
+x0 => reg_fstate.DATAA
+x1 => process_1.IN1
+x1 => reg_fstate.DATAA
+x1 => process_1.IN1
+x1 => reg_fstate.DATAA
+x1 => process_1.IN1
+x2 => process_1.IN1
+x2 => reg_fstate.DATAA
+x2 => process_1.IN1
+x2 => process_1.IN1
+x2 => process_1.IN1
+x2 => reg_fstate.DATAA
+x3 => process_1.IN1
+x3 => reg_fstate.DATAA
+x3 => process_1.IN1
+x3 => process_1.IN1
+x3 => process_1.IN1
+x3 => reg_fstate.DATAA
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
 
 
