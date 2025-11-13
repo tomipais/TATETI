@@ -28,4 +28,4 @@
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
 # ** Note: $finish    : tateti.vt(154)
-#    Time: 100 us  Iteration: 0  Instance: /tateti_vlg_vec_tst/tb_out
+#    Time: 999 ns  Iteration: 0  Instance: /tateti_vlg_vec_tst/tb_out

@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/altera/tateti/tateti.smf
-source_file = 1, C:/altera/tateti/tateti.vhd
-source_file = 1, C:/altera/tateti/Waveform.vwf
-source_file = 1, C:/altera/tateti/antirreboteschem.bdf
-source_file = 1, C:/altera/tateti/db/tateti.cbx.xml
+source_file = 1, C:/altera/tateti/antirebote/tateti.smf
+source_file = 1, C:/altera/tateti/antirebote/tateti.vhd
+source_file = 1, C:/altera/tateti/antirebote/Waveform.vwf
+source_file = 1, C:/altera/tateti/antirebote/antirreboteschem.bdf
+source_file = 1, C:/altera/tateti/antirebote/db/tateti.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
