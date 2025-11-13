@@ -1,5 +1,5 @@
 EDA Netlist Writer report for matrizbotones
-Wed Nov 12 08:45:56 2025
+Wed Nov 12 19:58:23 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 12 08:45:56 2025 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 12 19:58:23 2025 ;
 ; Revision Name             ; matrizbotones                         ;
 ; Top-level Entity Name     ; Block1                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 12 08:45:55 2025
+    Info: Processing started: Wed Nov 12 19:58:22 2025
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog matrizbotones -c matrizbotones
 Info (204019): Generated file matrizbotones.vo in folder "C:/Users/Facundo/Desktop/TATETI-main/matrizbotones/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4512 megabytes
-    Info: Processing ended: Wed Nov 12 08:45:56 2025
+    Info: Peak virtual memory: 4511 megabytes
+    Info: Processing ended: Wed Nov 12 19:58:23 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

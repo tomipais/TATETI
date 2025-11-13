@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\Users\Facundo\Desktop\TATETI-main\matrizbotones\simulation\qsim
 vBlock1
-Z1 IZZLQ0oIU9ag0o5^;C]_AW0
-Z2 VZbjoP3B8@eGYeX_<=^_k^0
-Z3 dC:\Users\Facundo\Desktop\TATETI-main\matrizbotones\simulation\qsim
-Z4 w1762947956
-Z5 8matrizbotones.vo
-Z6 Fmatrizbotones.vo
+Z1 !s100 UCR_E`<Z_^2hL9o07]7bB2
+Z2 IZZLQ0oIU9ag0o5^;C]_AW0
+Z3 VZbjoP3B8@eGYeX_<=^_k^0
+Z4 dC:\Users\Facundo\Desktop\TATETI-main\matrizbotones\simulation\qsim
+Z5 w1762988303
+Z6 8matrizbotones.vo
+Z7 Fmatrizbotones.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|matrizbotones.vo|
-Z9 o-work work -O0
-Z10 n@block1
+Z9 !s90 -work|work|matrizbotones.vo|
+Z10 o-work work -O0
+Z11 n@block1
 !i10b 1
-Z11 !s100 UCR_E`<Z_^2hL9o07]7bB2
 !s85 0
-Z12 !s108 1762947957.144000
+Z12 !s108 1762988306.885000
 Z13 !s107 matrizbotones.vo|
 !s101 -O0
 vBlock1_vlg_check_tst
 !i10b 1
-!s100 R1?B6I^ojAa[45[VQb]e>0
-IZzDkCJ<E5D:MIY1V_hSa_2
-V6kMgd4REWmGDJUXbkOP6B1
-R3
-Z14 w1762947954
-Z15 8matrizbotones.vt
-Z16 Fmatrizbotones.vt
+Z14 !s100 R1?B6I^ojAa[45[VQb]e>0
+Z15 IZzDkCJ<E5D:MIY1V_hSa_2
+Z16 V6kMgd4REWmGDJUXbkOP6B1
+R4
+Z17 w1762988302
+Z18 8matrizbotones.vt
+Z19 Fmatrizbotones.vt
 L0 65
-R7
+R8
 r1
 !s85 0
 31
-Z17 !s108 1762947957.310000
-Z18 !s107 matrizbotones.vt|
-Z19 !s90 -work|work|matrizbotones.vt|
+Z20 !s108 1762988307.076000
+Z21 !s107 matrizbotones.vt|
+Z22 !s90 -work|work|matrizbotones.vt|
 !s101 -O0
-R9
-Z20 n@block1_vlg_check_tst
+R10
+Z23 n@block1_vlg_check_tst
 vBlock1_vlg_sample_tst
 !i10b 1
-Z21 !s100 NVfoK?^W]SLh>J7fi`Wf]0
-Z22 IXSWRJ`mh[>SRAc3ekFX9C1
-Z23 VV=IE:IR;;4Igin[WDo4];0
-R3
-R14
-R15
-R16
-L0 29
-R7
-r1
-!s85 0
-31
+Z24 !s100 NVfoK?^W]SLh>J7fi`Wf]0
+Z25 IXSWRJ`mh[>SRAc3ekFX9C1
+Z26 VV=IE:IR;;4Igin[WDo4];0
+R4
 R17
 R18
 R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
 !s101 -O0
-R9
-Z24 n@block1_vlg_sample_tst
+R10
+Z27 n@block1_vlg_sample_tst
 vBlock1_vlg_vec_tst
 !i10b 1
-!s100 0d6P4Cl<@jiJ5<YS2UFam1
-IV]UIYX?lAPa^C0>8h;g:=2
-Z25 V8EbEX^g@9e0ZUXjTWSm=l2
-R3
-R14
-R15
-R16
-L0 429
-R7
-r1
-!s85 0
-31
+Z28 !s100 0d6P4Cl<@jiJ5<YS2UFam1
+Z29 IV]UIYX?lAPa^C0>8h;g:=2
+Z30 V8EbEX^g@9e0ZUXjTWSm=l2
+R4
 R17
 R18
 R19
+Z31 L0 429
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
 !s101 -O0
-R9
-Z26 n@block1_vlg_vec_tst
+R10
+Z32 n@block1_vlg_vec_tst
