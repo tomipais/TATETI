@@ -68,9 +68,16 @@ applicable agreement for further details.
 	(port
 		(pt 152 32)
 		(output)
-		(text "Z[0..3]" (rect 0 0 27 12)(font "Arial" ))
-		(text "Z[0..3]" (rect 104 27 131 39)(font "Arial" ))
+		(text "Z[3..0]" (rect 0 0 27 12)(font "Arial" ))
+		(text "Z[3..0]" (rect 104 27 131 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "fila[3..0]" (rect 0 0 30 12)(font "Arial" ))
+		(text "fila[3..0]" (rect 101 43 131 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 136 128)(line_width 1))

@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
+<<<<<<< Updated upstream
     <hash md5_digest_80b="cfb4f116887db2d65af2"/>
+=======
+    <hash md5_digest_80b="ee54d7f305ac9492378a"/>
+>>>>>>> Stashed changes
   </project>
   <file_info>
     <file device="EP4CE22F17C6" path="matrizbotones.sof" usercode="0xFFFFFFFF"/>

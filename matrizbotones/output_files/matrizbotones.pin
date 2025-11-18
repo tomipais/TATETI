@@ -69,11 +69,19 @@ CHIP  "matrizbotones"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+<<<<<<< Updated upstream
 Z[1]                         : A2        : output : 2.5 V             :         : 8         : N              
 entrada0                     : A3        : input  : 2.5 V             :         : 8         : N              
 Posicion[3]                  : A4        : output : 2.5 V             :         : 8         : N              
 Z[2]                         : A5        : output : 2.5 V             :         : 8         : N              
 columna2                     : A6        : output : 2.5 V             :         : 8         : N              
+=======
+sw2                          : A2        : input  : 2.5 V             :         : 8         : N              
+sw3                          : A3        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
+>>>>>>> Stashed changes
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
@@ -84,13 +92,21 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
+sw1                          : B1        : input  : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
+<<<<<<< Updated upstream
 Posicion[1]                  : B3        : output : 2.5 V             :         : 8         : N              
 Posicion[0]                  : B4        : output : 2.5 V             :         : 8         : N              
 Z[0]                         : B5        : output : 2.5 V             :         : 8         : N              
 columna0                     : B6        : output : 2.5 V             :         : 8         : N              
 entrada3                     : B7        : input  : 2.5 V             :         : 8         : N              
+=======
+led[0]                       : B3        : output : 2.5 V             :         : 8         : N              
+sw4                          : B4        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
+>>>>>>> Stashed changes
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7         :                
@@ -102,7 +118,7 @@ GND                          : B15       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 6         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+led[3]                       : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
 pin_name1                    : C6        : output : 2.5 V             :         : 8         : N              
@@ -118,10 +134,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
+led[2]                       : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+<<<<<<< Updated upstream
 Z[3]                         : D5        : output : 2.5 V             :         : 8         : N              
 Posicion[2]                  : D6        : output : 2.5 V             :         : 8         : N              
+=======
+led[1]                       : D5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+>>>>>>> Stashed changes
 GND                          : D7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 7         :                
@@ -132,7 +153,11 @@ VCCD_PLL2                    : D13       : power  :                   : 1.2V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 6         :                
+<<<<<<< Updated upstream
 reloj                        : E1        : input  : 2.5 V             :         : 1         : N              
+=======
+clk                          : E1        : input  : 2.5 V             :         : 1         : N              
+>>>>>>> Stashed changes
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                

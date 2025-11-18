@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 |Block1
 columna0 <= tateti:inst3.z
 reloj => tateti:inst3.clock
@@ -25,12 +26,61 @@ Z[0] <= botonera:inst.Z[0]
 
 
 |Block1|tateti:inst3
+=======
+|prueba
+clk => Block1:uut.clk
+sw1 => Block1:uut.x0
+sw2 => Block1:uut.x1
+sw3 => Block1:uut.x2
+sw4 => Block1:uut.x3
+led[0] <= Block1:uut.posicionnes[0]
+led[1] <= Block1:uut.posicionnes[1]
+led[2] <= Block1:uut.posicionnes[2]
+led[3] <= Block1:uut.posicionnes[3]
+
+
+|prueba|Block1:uut
+c0 <= tateti:inst11.z
+clk => pllclk:inst7.inclk0
+clk => tateti:inst11.clock
+clk => tateti:inst.clock
+clk => tateti:inst10.clock
+clk => tateti:inst9.clock
+clk => botonera:inst6.clock
+x0 => tateti:inst11.x
+x3 => tateti:inst.x
+x1 => tateti:inst10.x
+x2 => tateti:inst9.x
+c1 <= tateti:inst10.z
+c2 <= tateti:inst9.z
+c3 <= tateti:inst.z
+ORoOR <= instorrrr.DB_MAX_OUTPUT_PORT_TYPE
+posicionnes[0] <= matrizbotones:inst2.posicion[0]
+posicionnes[1] <= matrizbotones:inst2.posicion[1]
+posicionnes[2] <= matrizbotones:inst2.posicion[2]
+posicionnes[3] <= matrizbotones:inst2.posicion[3]
+salida[0] <= botonera:inst6.fila[0]
+salida[1] <= botonera:inst6.fila[1]
+salida[2] <= botonera:inst6.fila[2]
+salida[3] <= botonera:inst6.fila[3]
+Z[0] <= botonera:inst6.Z[0]
+Z[1] <= botonera:inst6.Z[1]
+Z[2] <= botonera:inst6.Z[2]
+Z[3] <= botonera:inst6.Z[3]
+
+
+|prueba|Block1:uut|tateti:inst11
+>>>>>>> Stashed changes
 reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
 reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
+<<<<<<< Updated upstream
+=======
+reset => cont.OUTPUTSELECT
+>>>>>>> Stashed changes
 clock => fstate~1.DATAIN
 x => process_1.IN0
 x => process_1.IN0
@@ -44,6 +94,7 @@ T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< Updated upstream
 
 
 |Block1|contador_20ms:inst1
@@ -93,12 +144,140 @@ tick_20ms <= tick_20ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Block1|tateti:inst4
+=======
+cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Block1:uut|pllclk:inst7
+areset => altpll:altpll_component.areset
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+locked <= altpll:altpll_component.locked
+
+
+|prueba|Block1:uut|pllclk:inst7|altpll:altpll_component
+inclk[0] => pllclk_altpll:auto_generated.inclk[0]
+inclk[1] => pllclk_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pllclk_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= pllclk_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|prueba|Block1:uut|pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated
+areset => pll_lock_sync.ACLR
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Block1:uut|binary_counter:inst1
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+reset => cnt[10].IN1
+enable => cnt[1].ENA
+enable => cnt[0].ENA
+enable => cnt[2].ENA
+enable => cnt[3].ENA
+enable => cnt[4].ENA
+enable => cnt[5].ENA
+enable => cnt[6].ENA
+enable => cnt[7].ENA
+enable => cnt[8].ENA
+enable => cnt[9].ENA
+enable => cnt[10].ENA
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= cnt[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= cnt[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
+T <= <VCC>
+
+
+|prueba|Block1:uut|tateti:inst
+>>>>>>> Stashed changes
 reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
 reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
+<<<<<<< Updated upstream
+=======
+reset => cont.OUTPUTSELECT
+>>>>>>> Stashed changes
 clock => fstate~1.DATAIN
 x => process_1.IN0
 x => process_1.IN0
@@ -112,15 +291,26 @@ T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< Updated upstream
 
 
 |Block1|tateti:inst5
+=======
+cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Block1:uut|tateti:inst10
+>>>>>>> Stashed changes
 reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
 reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
+<<<<<<< Updated upstream
+=======
+reset => cont.OUTPUTSELECT
+>>>>>>> Stashed changes
 clock => fstate~1.DATAIN
 x => process_1.IN0
 x => process_1.IN0
@@ -134,15 +324,26 @@ T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< Updated upstream
 
 
 |Block1|tateti:inst6
+=======
+cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Block1:uut|tateti:inst9
+>>>>>>> Stashed changes
 reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
 reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
+<<<<<<< Updated upstream
+=======
+reset => cont.OUTPUTSELECT
+>>>>>>> Stashed changes
 clock => fstate~1.DATAIN
 x => process_1.IN0
 x => process_1.IN0
@@ -156,9 +357,16 @@ T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< Updated upstream
 
 
 |Block1|matrizbotones:inst2
+=======
+cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Block1:uut|matrizbotones:inst2
+>>>>>>> Stashed changes
 fila[0] => Mux0.IN259
 fila[0] => Mux1.IN259
 fila[0] => Mux2.IN259
@@ -197,6 +405,7 @@ posicion[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 posicion[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< Updated upstream
 |Block1|botonera:inst
 reset => fstate~3.DATAIN
 clock => fstate~1.DATAIN
@@ -226,5 +435,32 @@ Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
 Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
 Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
 Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+=======
+|prueba|Block1:uut|botonera:inst6
+reset => fstate~3.DATAIN
+clock => fstate~1.DATAIN
+x0 => process_1.IN0
+x0 => process_1.IN0
+x0 => process_1.IN0
+x1 => process_1.IN1
+x1 => process_1.IN1
+x1 => process_1.IN1
+x2 => process_1.IN1
+x2 => process_1.IN1
+x2 => process_1.IN1
+x2 => process_1.IN1
+x3 => process_1.IN1
+x3 => process_1.IN1
+x3 => process_1.IN1
+x3 => process_1.IN1
+Z[0] <= Z[0].DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z[1].DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z[2].DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z[3].DB_MAX_OUTPUT_PORT_TYPE
+fila[0] <= fila.DB_MAX_OUTPUT_PORT_TYPE
+fila[1] <= fila.DB_MAX_OUTPUT_PORT_TYPE
+fila[2] <= fila.DB_MAX_OUTPUT_PORT_TYPE
+fila[3] <= fila.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 
 

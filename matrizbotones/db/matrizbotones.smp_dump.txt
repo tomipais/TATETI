@@ -1,5 +1,9 @@
 
+<<<<<<< Updated upstream
 State Machine - |Block1|botonera:inst|fstate
+=======
+State Machine - |prueba|Block1:uut|botonera:inst6|fstate
+>>>>>>> Stashed changes
 Name fstate.fijo3 fstate.fijo2 fstate.fijo1 fstate.fijo0 fstate.In1 fstate.In3 fstate.In2 fstate.In0 
 fstate.In0 0 0 0 0 0 0 0 0 
 fstate.In2 0 0 0 0 0 0 1 1 
@@ -10,28 +14,44 @@ fstate.fijo1 0 0 1 0 0 0 0 1
 fstate.fijo2 0 1 0 0 0 0 0 1 
 fstate.fijo3 1 0 0 0 0 0 0 1 
 
+<<<<<<< Updated upstream
 State Machine - |Block1|tateti:inst6|fstate
+=======
+State Machine - |prueba|Block1:uut|tateti:inst9|fstate
+>>>>>>> Stashed changes
 Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
 fstate.unoestable 0 0 0 0 
 fstate.ceroestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
+<<<<<<< Updated upstream
 State Machine - |Block1|tateti:inst5|fstate
+=======
+State Machine - |prueba|Block1:uut|tateti:inst10|fstate
+>>>>>>> Stashed changes
 Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
 fstate.unoestable 0 0 0 0 
 fstate.ceroestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
+<<<<<<< Updated upstream
 State Machine - |Block1|tateti:inst4|fstate
+=======
+State Machine - |prueba|Block1:uut|tateti:inst|fstate
+>>>>>>> Stashed changes
 Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
 fstate.unoestable 0 0 0 0 
 fstate.ceroestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
+<<<<<<< Updated upstream
 State Machine - |Block1|tateti:inst3|fstate
+=======
+State Machine - |prueba|Block1:uut|tateti:inst11|fstate
+>>>>>>> Stashed changes
 Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
 fstate.unoestable 0 0 0 0 
 fstate.ceroestable 0 0 1 1 
