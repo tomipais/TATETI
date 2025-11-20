@@ -4,12 +4,18 @@ USE ieee.numeric_std.ALL;
 
 entity matrizbotones is
 	port(
-		fila : in std_logic_vector(3 downto 0);
+		f0 : in std_logic;
+		f1 : in std_logic;
+		f2 : in std_logic;
+		f3 : in std_logic;
 		c3 : in std_logic;
 		c2 : in std_logic;
 		c1 : in std_logic;
 		c0 : in std_logic;
-		posicion : out unsigned(3 downto 0) 
+		p0 : out std_logic;
+		p1 : out std_logic;
+		p2 : out std_logic;
+		p3 : out std_logic
 	);
 end matrizbotones;
 
@@ -80,7 +86,9 @@ end matrizbotones;
 --	end process recorre;
 	ARCHITECTURE recorrermatriz OF matrizbotones IS
 	SIGNAL x: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	signal fila : std_logic_vector(3 downto 0);
 	signal columna : std_logic_vector(3 downto 0);
+	signal posicion : std_LOGIC_VECTOR(3 downto 0);
 BEGIN
     -- Asignación concurrente (siempre correcta)
 	x <= fila & columna;
@@ -121,7 +129,15 @@ columna(2)<=c2;
 columna(1)<=c1;
 columna(0)<=c0;
 
-	
-	
+p3<=posicion(3);
+p2<=posicion(2);
+p1<=posicion(1);
+p0<=posicion(0);
+
+fila(3)<=f3;
+fila(2)<=f2;
+fila(1)<=f1;
+fila(0)<=f0;
+
 end architecture recorrermatriz;
 	

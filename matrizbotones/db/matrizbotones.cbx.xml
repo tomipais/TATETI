@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="matrizbotones">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Block1|pllclk:inst7|altpll:altpll_component" CBX_FILE_NAME="pllclk_altpll.v"/>
 	</PROJECT>
 </LOG_ROOT>

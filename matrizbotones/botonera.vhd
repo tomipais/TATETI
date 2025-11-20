@@ -26,7 +26,10 @@ ENTITY botonera IS
         x1 : IN STD_LOGIC := '0';
         x2 : IN STD_LOGIC := '0';
         x3 : IN STD_LOGIC := '0';
-        Z : OUT STD_LOGIC_VECTOR(0 TO 3)
+        Z0 : out std_logic;
+		  Z1 : out std_logic;
+		  Z2 : out std_logic;
+		  Z3 : out std_logic	  
     );
 END botonera;
 
@@ -34,6 +37,7 @@ ARCHITECTURE BEHAVIOR OF botonera IS
     TYPE type_fstate IS (In2,In0,In3,In1,fijo0,fijo1,fijo2,fijo3);
     SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
+	 signal Z : STD_LOGIC_VECTOR(0 TO 3);
 BEGIN
     PROCESS (clock,reset,reg_fstate)
     BEGIN
@@ -113,4 +117,9 @@ BEGIN
                 report "Reach undefined state";
         END CASE;
     END PROCESS;
+	 Z0<=Z(0);
+	 Z1<=Z(1);
+	 Z2<=Z(2);
+	 Z3<=Z(3);
+	 
 END BEHAVIOR;
