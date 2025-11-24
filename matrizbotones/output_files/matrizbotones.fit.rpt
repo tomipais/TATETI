@@ -1,5 +1,5 @@
 Fitter report for matrizbotones
-Thu Nov 20 16:52:06 2025
+Mon Nov 24 12:29:21 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 20 16:52:06 2025           ;
+; Fitter Status                      ; Successful - Mon Nov 24 12:29:21 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; matrizbotones                                   ;
 ; Top-level Entity Name              ; Block1                                          ;
@@ -152,7 +152,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 22     ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -215,7 +215,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/altera/tateti/matrizbotones/output_files/matrizbotones.pin.
+The pin-out file can be found in C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/matrizbotones/output_files/matrizbotones.pin.
 
 
 +---------------------------------------------------------------------+
@@ -699,25 +699,25 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Compensate clock              ; clock0                                                                 ;
 ; Compensated input/output pins ; --                                                                     ;
 ; Switchover type               ; --                                                                     ;
-; Input frequency 0             ; 50.0 MHz                                                               ;
+; Input frequency 0             ; 100.0 MHz                                                              ;
 ; Input frequency 1             ; --                                                                     ;
-; Nominal PFD frequency         ; 50.0 MHz                                                               ;
+; Nominal PFD frequency         ; 100.0 MHz                                                              ;
 ; Nominal VCO frequency         ; 599.9 MHz                                                              ;
 ; VCO post scale K counter      ; 2                                                                      ;
 ; VCO frequency control         ; Auto                                                                   ;
 ; VCO phase shift step          ; 208 ps                                                                 ;
 ; VCO multiply                  ; --                                                                     ;
 ; VCO divide                    ; --                                                                     ;
-; Freq min lock                 ; 25.0 MHz                                                               ;
-; Freq max lock                 ; 54.18 MHz                                                              ;
+; Freq min lock                 ; 50.01 MHz                                                              ;
+; Freq max lock                 ; 108.37 MHz                                                             ;
 ; M VCO Tap                     ; 0                                                                      ;
 ; M Initial                     ; 1                                                                      ;
-; M value                       ; 12                                                                     ;
+; M value                       ; 6                                                                      ;
 ; N value                       ; 1                                                                      ;
 ; Charge pump current           ; setting 1                                                              ;
 ; Loop filter resistance        ; setting 27                                                             ;
 ; Loop filter capacitance       ; setting 0                                                              ;
-; Bandwidth                     ; 680 kHz to 980 kHz                                                     ;
+; Bandwidth                     ; 1.03 MHz to 1.97 MHz                                                   ;
 ; Bandwidth type                ; Medium                                                                 ;
 ; Real time reconfigurable      ; Off                                                                    ;
 ; Scan chain MIF file           ; --                                                                     ;
@@ -730,14 +730,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------+------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; PLL Usage                                                                                                                                                                                                                                                                                                                   ;
-+-----------------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
-; Name                                                                                          ; Output Clock ; Mult ; Div ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low   ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                      ;
-+-----------------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
-; pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0]            ; clock0       ; 1    ; 500 ; 0.1 MHz          ; 0 (0 ps)    ; 0.09 (208 ps)    ; 50/50      ; C1      ; 500           ; 250/250 Even ; C0            ; 1       ; 0       ; inst7|altpll_component|auto_generated|pll1|clk[0] ;
-; pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0]~cascade_in ; --           ; --   ; --  ; --               ; --          ; --               ; --         ; C0      ; 12            ; 6/6 Even     ; --            ; 1       ; 0       ;                                                   ;
-+-----------------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; PLL Usage                                                                                                                                                                                                                                                                                                                    ;
++-----------------------------------------------------------------------------------------------+--------------+------+------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
+; Name                                                                                          ; Output Clock ; Mult ; Div  ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low   ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                      ;
++-----------------------------------------------------------------------------------------------+--------------+------+------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
+; pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0]            ; clock0       ; 1    ; 1000 ; 0.1 MHz          ; 0 (0 ps)    ; 0.09 (208 ps)    ; 50/50      ; C1      ; 500           ; 250/250 Even ; C0            ; 1       ; 0       ; inst7|altpll_component|auto_generated|pll1|clk[0] ;
+; pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0]~cascade_in ; --           ; --   ; --   ; --               ; --          ; --               ; --         ; C0      ; 12            ; 6/6 Even     ; --            ; 1       ; 0       ;                                                   ;
++-----------------------------------------------------------------------------------------------+--------------+------+------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+---------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1168,7 +1168,7 @@ Info (119006): Selected device EP4CE22F17C6 for design "matrizbotones"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (15535): Implemented PLL "pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|pll1" as Cyclone IV E PLL type
-    Info (15099): Implementing clock multiplication of 1, clock division of 500, and phase shift of 0 degrees (0 ps) for pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0] port
+    Info (15099): Implementing clock multiplication of 1, clock division of 1000, and phase shift of 0 degrees (0 ps) for pllclk:inst7|altpll:altpll_component|pllclk_altpll:auto_generated|wire_pll1_clk[0] port
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -1217,7 +1217,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  12 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 1 total pin(s) used --  23 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has 2.5V VCCIO pins. 7 total pin(s) used --  17 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1230,23 +1230,23 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/altera/tateti/matrizbotones/output_files/matrizbotones.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/matrizbotones/output_files/matrizbotones.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4921 megabytes
-    Info: Processing ended: Thu Nov 20 16:52:06 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4920 megabytes
+    Info: Processing ended: Mon Nov 24 12:29:21 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/altera/tateti/matrizbotones/output_files/matrizbotones.fit.smsg.
+The suppressed messages can be found in C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/matrizbotones/output_files/matrizbotones.fit.smsg.
 
 

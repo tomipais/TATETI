@@ -1,0 +1,73 @@
+# do matrizbotones.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1
+# 
+# Top level modules:
+# 	Block1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Block1_vlg_sample_tst
+# -- Compiling module Block1_vlg_check_tst
+# -- Compiling module Block1_vlg_vec_tst
+# 
+# Top level modules:
+# 	Block1_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Block1_vlg_vec_tst 
+# Loading work.Block1_vlg_vec_tst
+# Loading work.Block1
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading work.Block1_vlg_sample_tst
+# Loading work.Block1_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+#  Note : Cycloneive PLL locked to incoming clock
+# Time: 45000.000 ps  Instance: Block1_vlg_vec_tst.i1.\inst7|altpll_component|auto_generated|pll1 
+# ERROR! Vector Mismatch for output port c0 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port c1 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port c2 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port c3 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port p0 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port p1 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port p2 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port p3 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port z0 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = z
+# ERROR! Vector Mismatch for output port z1 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = z
+# ERROR! Vector Mismatch for output port z2 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = z
+# ERROR! Vector Mismatch for output port z3 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#          12 mismatched vectors : Simulation failed !
+# ** Note: $finish    : matrizbotones.vt(465)
+#    Time: 100 us  Iteration: 0  Instance: /Block1_vlg_vec_tst/tb_out
