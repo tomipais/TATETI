@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/altera/tateti/matrizbotones/output_files/") File("matrizbotones.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/matrizbotones/output_files/") File("matrizbotones.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -51,7 +51,7 @@ applicable agreement for further details.
 	)
 	(drawing
 		(text "Cyclone IV E" (rect 188 136 431 283)(font "Arial" ))
-		(text "inclk0 period: 10.000 ns" (rect 58 59 213 129)(font "Arial" ))
+		(text "inclk0 period: 20.000 ns" (rect 58 59 213 129)(font "Arial" ))
 		(text "Operation Mode: Normal" (rect 58 72 215 155)(font "Arial" ))
 		(text "Clk " (rect 59 93 132 197)(font "Arial" ))
 		(text "Ratio" (rect 83 93 186 197)(font "Arial" ))

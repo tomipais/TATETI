@@ -5,7 +5,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity binary_counter is
+entity contador2000 is
 
 	generic
 	(
@@ -24,7 +24,7 @@ entity binary_counter is
 
 end entity;
 
-architecture rtl of binary_counter is
+architecture rtl of contador2000 is
 begin
 
 	process (clk)

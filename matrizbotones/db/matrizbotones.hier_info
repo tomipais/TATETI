@@ -1,6 +1,7 @@
 |Block1
 c0 <= tateti:inst11.z
 clk => pllclk:inst7.inclk0
+pin_name1 => pllclk:inst7.areset
 x0 => tateti:inst11.x
 x1 => tateti:inst10.x
 x3 => tateti:tat.x
@@ -16,6 +17,10 @@ p0 <= matrizbotones:inst4.p0
 p1 <= matrizbotones:inst4.p1
 p2 <= matrizbotones:inst4.p2
 p3 <= matrizbotones:inst4.p3
+c4 <= pllclk:inst7.c0
+locked <= pllclk:inst7.locked
+T <= contador2000:inst3.T
+cont <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Block1|tateti:inst11
@@ -23,21 +28,17 @@ reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
-reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
 reset => cont.OUTPUTSELECT
 clock => fstate~1.DATAIN
 x => process_1.IN0
-x => process_1.IN0
+x => Selector1.IN3
+x => Selector3.IN3
 x => Selector0.IN1
-x => Selector3.IN1
-x => Selector1.IN1
+x => process_1.IN0
 x => Selector2.IN1
 T => process_1.IN1
 T => process_1.IN1
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -122,7 +123,7 @@ inclk[1] => pll1.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Block1|binary_counter:inst1
+|Block1|contador2000:inst3
 clk => cnt[0].CLK
 clk => cnt[1].CLK
 clk => cnt[2].CLK
@@ -165,21 +166,17 @@ reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
-reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
 reset => cont.OUTPUTSELECT
 clock => fstate~1.DATAIN
 x => process_1.IN0
-x => process_1.IN0
+x => Selector1.IN3
+x => Selector3.IN3
 x => Selector0.IN1
-x => Selector3.IN1
-x => Selector1.IN1
+x => process_1.IN0
 x => Selector2.IN1
 T => process_1.IN1
 T => process_1.IN1
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -189,21 +186,17 @@ reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
-reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
 reset => cont.OUTPUTSELECT
 clock => fstate~1.DATAIN
 x => process_1.IN0
-x => process_1.IN0
+x => Selector1.IN3
+x => Selector3.IN3
 x => Selector0.IN1
-x => Selector3.IN1
-x => Selector1.IN1
+x => process_1.IN0
 x => Selector2.IN1
 T => process_1.IN1
 T => process_1.IN1
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -213,21 +206,17 @@ reset => reg_fstate.ceroestable.OUTPUTSELECT
 reset => reg_fstate.unoestable.OUTPUTSELECT
 reset => reg_fstate.preguntauno.OUTPUTSELECT
 reset => reg_fstate.preguntacero.OUTPUTSELECT
-reset => reg_z.OUTPUTSELECT
 reset => z.OUTPUTSELECT
 reset => cont.OUTPUTSELECT
 clock => fstate~1.DATAIN
 x => process_1.IN0
-x => process_1.IN0
+x => Selector1.IN3
+x => Selector3.IN3
 x => Selector0.IN1
-x => Selector3.IN1
-x => Selector1.IN1
+x => process_1.IN0
 x => Selector2.IN1
 T => process_1.IN1
 T => process_1.IN1
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
-T => reg_fstate.OUTPUTSELECT
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -236,31 +225,17 @@ cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 reset => fstate~3.DATAIN
 clock => fstate~1.DATAIN
 x0 => process_1.IN0
-x0 => reg_fstate.DATAA
 x0 => process_1.IN0
-x0 => process_1.IN0
-x0 => reg_fstate.DATAA
 x1 => process_1.IN1
-x1 => reg_fstate.DATAA
-x1 => process_1.IN1
-x1 => reg_fstate.DATAA
 x1 => process_1.IN1
 x2 => process_1.IN1
-x2 => reg_fstate.DATAA
 x2 => process_1.IN1
-x2 => process_1.IN1
-x2 => process_1.IN1
-x2 => reg_fstate.DATAA
-x3 => process_1.IN1
-x3 => reg_fstate.DATAA
 x3 => process_1.IN1
 x3 => process_1.IN1
-x3 => process_1.IN1
-x3 => reg_fstate.DATAA
-Z0 <= Z.DB_MAX_OUTPUT_PORT_TYPE
-Z1 <= Z.DB_MAX_OUTPUT_PORT_TYPE
-Z2 <= Z.DB_MAX_OUTPUT_PORT_TYPE
-Z3 <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Block1|matrizbotones:inst4

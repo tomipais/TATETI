@@ -6,10 +6,14 @@ entity Block1_vlg_check_tst is
         c1              : in     vl_logic;
         c2              : in     vl_logic;
         c3              : in     vl_logic;
+        c4              : in     vl_logic;
+        cont            : in     vl_logic;
+        locked          : in     vl_logic;
         p0              : in     vl_logic;
         p1              : in     vl_logic;
         p2              : in     vl_logic;
         p3              : in     vl_logic;
+        T               : in     vl_logic;
         z0              : in     vl_logic;
         z1              : in     vl_logic;
         z2              : in     vl_logic;

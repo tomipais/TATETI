@@ -11,29 +11,29 @@ fstate.fijo2 0 1 0 0 0 0 0 1
 fstate.fijo3 1 0 0 0 0 0 0 1 
 
 State Machine - |Block1|tateti:inst9|fstate
-Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
-fstate.unoestable 0 0 0 0 
-fstate.ceroestable 0 0 1 1 
+Name fstate.preguntacero fstate.preguntauno fstate.unoestable fstate.ceroestable 
+fstate.ceroestable 0 0 0 0 
+fstate.unoestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
 State Machine - |Block1|tateti:tat|fstate
-Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
-fstate.unoestable 0 0 0 0 
-fstate.ceroestable 0 0 1 1 
+Name fstate.preguntacero fstate.preguntauno fstate.unoestable fstate.ceroestable 
+fstate.ceroestable 0 0 0 0 
+fstate.unoestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
 State Machine - |Block1|tateti:inst10|fstate
-Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
-fstate.unoestable 0 0 0 0 
-fstate.ceroestable 0 0 1 1 
+Name fstate.preguntacero fstate.preguntauno fstate.unoestable fstate.ceroestable 
+fstate.ceroestable 0 0 0 0 
+fstate.unoestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
 
 State Machine - |Block1|tateti:inst11|fstate
-Name fstate.preguntacero fstate.preguntauno fstate.ceroestable fstate.unoestable 
-fstate.unoestable 0 0 0 0 
-fstate.ceroestable 0 0 1 1 
+Name fstate.preguntacero fstate.preguntauno fstate.unoestable fstate.ceroestable 
+fstate.ceroestable 0 0 0 0 
+fstate.unoestable 0 0 1 1 
 fstate.preguntauno 0 1 0 1 
 fstate.preguntacero 1 0 0 1 
