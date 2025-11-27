@@ -103,23 +103,23 @@ BEGIN
 
         CASE x IS
             
-            WHEN "00010001" => posicion<="1111";
-            WHEN "00010010" => posicion<="1110";
-            WHEN "00010100" => posicion<="1101";
-            WHEN "00011000" => posicion<="1100";
-            WHEN "00100001" => posicion<="1011";
-            WHEN "00100010" => posicion<="1010";
-            WHEN "00100100" => posicion<="1001";
-            WHEN "00101000" => posicion<="1000";
-            WHEN "01000001" => posicion<="0111";
-            WHEN "01000010" => posicion<="0110";
-            WHEN "01000100" => posicion<="0101";
-            WHEN "01001000" => posicion<="0100";
-            WHEN "10000001" => posicion<="0011";
-            WHEN "10000010" => posicion<="0010";
-            WHEN "10000100" => posicion<="0001";
-            WHEN "10001000" => posicion<="0000";
-            WHEN OTHERS => posicion<="1111";
+            WHEN "00010001" => posicion<="0011";
+            WHEN "00010010" => posicion<="0010";
+            WHEN "00010100" => posicion<="0001";
+            WHEN "00011000" => posicion<="0000";
+            WHEN "00100001" => posicion<="0111";
+            WHEN "00100010" => posicion<="0110";
+            WHEN "00100100" => posicion<="0101";
+            WHEN "00101000" => posicion<="0100";
+            WHEN "01000001" => posicion<="1011";
+            WHEN "01000010" => posicion<="1010";
+            WHEN "01000100" => posicion<="1001";
+            WHEN "01001000" => posicion<="1000";
+            WHEN "10000001" => posicion<="1111";
+            WHEN "10000010" => posicion<="1110";
+            WHEN "10000100" => posicion<="1101";
+            WHEN "10001000" => posicion<="1100";
+            WHEN OTHERS => posicion<="0000";
 
 		END CASE;
 			

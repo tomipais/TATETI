@@ -1,7 +1,7 @@
 |Block1
 c0 <= tateti:inst11.z
+Resetgeneral => inst5.IN0
 clk => pllclk:inst7.inclk0
-pin_name1 => pllclk:inst7.areset
 x0 => tateti:inst11.x
 x1 => tateti:inst10.x
 x3 => tateti:tat.x
@@ -47,6 +47,7 @@ cont <= cont.DB_MAX_OUTPUT_PORT_TYPE
 areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
+c1 <= altpll:altpll_component.clk[1]
 locked <= altpll:altpll_component.locked
 
 

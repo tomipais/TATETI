@@ -4,7 +4,6 @@ entity Block1 is
     port(
         c0              : out    vl_logic;
         clk             : in     vl_logic;
-        pin_name1       : in     vl_logic;
         x0              : in     vl_logic;
         x1              : in     vl_logic;
         x3              : in     vl_logic;

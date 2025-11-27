@@ -52,22 +52,6 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
-	(input)
-	(rect 416 368 584 384)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 30 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 1224 112 1400 128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -158,49 +142,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 816 272 960 384)
-	(text "infoleds" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 21 27 45 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clock" (rect 0 0 25 12)(font "Arial" ))
-		(text "clock" (rect 21 43 46 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "c0" (rect 0 0 11 12)(font "Arial" ))
-		(text "c0" (rect 21 59 32 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "c1" (rect 0 0 11 12)(font "Arial" ))
-		(text "c1" (rect 21 75 32 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "senal" (rect 0 0 25 12)(font "Arial" ))
-		(text "senal" (rect 102 27 127 39)(font "Arial" ))
-		(line (pt 144 32)(pt 128 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 96))
-	)
-)
-(symbol
 	(rect 624 288 672 320)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
@@ -262,10 +203,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 568 144)
-	(pt 568 104)
-)
-(connector
 	(pt 560 144)
 	(pt 568 144)
 )
@@ -280,26 +217,6 @@ applicable agreement for further details.
 (connector
 	(pt 568 304)
 	(pt 624 304)
-)
-(connector
-	(pt 816 304)
-	(pt 672 304)
-)
-(connector
-	(pt 816 336)
-	(pt 768 336)
-)
-(connector
-	(pt 768 336)
-	(pt 768 104)
-)
-(connector
-	(pt 816 352)
-	(pt 696 352)
-)
-(connector
-	(pt 696 352)
-	(pt 696 160)
 )
 (connector
 	(pt 288 144)
@@ -326,26 +243,6 @@ applicable agreement for further details.
 	(pt 232 168)
 )
 (connector
-	(pt 808 320)
-	(pt 808 376)
-)
-(connector
-	(pt 816 320)
-	(pt 808 320)
-)
-(connector
-	(pt 808 376)
-	(pt 584 376)
-)
-(connector
-	(pt 568 104)
-	(pt 768 104)
-)
-(connector
-	(pt 1040 304)
-	(pt 960 304)
-)
-(connector
 	(pt 1040 304)
 	(pt 1040 152)
 )
@@ -362,28 +259,22 @@ applicable agreement for further details.
 	(pt 1224 120)
 )
 (connector
-	(pt 1064 120)
-	(pt 1064 104)
-)
-(connector
-	(pt 1072 120)
-	(pt 1064 120)
-)
-(connector
-	(pt 768 104)
-	(pt 1064 104)
-)
-(connector
 	(pt 912 136)
 	(pt 912 160)
 )
 (connector
 	(pt 560 160)
-	(pt 696 160)
-)
-(connector
-	(pt 696 160)
 	(pt 912 160)
 )
-(junction (pt 768 104))
-(junction (pt 696 160))
+(connector
+	(pt 568 144)
+	(pt 568 120)
+)
+(connector
+	(pt 568 120)
+	(pt 1072 120)
+)
+(connector
+	(pt 672 304)
+	(pt 1040 304)
+)

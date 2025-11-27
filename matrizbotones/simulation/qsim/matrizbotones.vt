@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/27/2025 13:08:53"
+// Generated on "11/27/2025 14:55:01"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Block1
 // 
@@ -28,7 +28,6 @@
 `timescale 1 ps/ 1 ps
 module Block1_vlg_sample_tst(
 	clk,
-	pin_name1,
 	x0,
 	x1,
 	x2,
@@ -36,7 +35,6 @@ module Block1_vlg_sample_tst(
 	sampler_tx
 );
 input  clk;
-input  pin_name1;
 input  x0;
 input  x1;
 input  x2;
@@ -45,7 +43,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk or pin_name1 or x0 or x1 or x2 or x3)
+always @(clk or x0 or x1 or x2 or x3)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -568,7 +566,6 @@ module Block1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg pin_name1;
 reg x0;
 reg x1;
 reg x2;
@@ -608,7 +605,6 @@ Block1 i1 (
 	.p1(p1),
 	.p2(p2),
 	.p3(p3),
-	.pin_name1(pin_name1),
 	.T(T),
 	.x0(x0),
 	.x1(x1),
@@ -628,18 +624,10 @@ begin
 	#10000;
 end 
 
-// pin_name1
-initial
-begin
-	pin_name1 = 1'b0;
-end 
-
 // x0
 initial
 begin
 	x0 = 1'b0;
-	x0 = #21120000 1'b1;
-	x0 = #13440000 1'b0;
 end 
 
 // x1
@@ -662,7 +650,6 @@ end
 
 Block1_vlg_sample_tst tb_sample (
 	.clk(clk),
-	.pin_name1(pin_name1),
 	.x0(x0),
 	.x1(x1),
 	.x2(x2),

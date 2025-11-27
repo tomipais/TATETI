@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="infoleds">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Block1|altpll0:inst|altpll:altpll_component" CBX_FILE_NAME="altpll0_altpll.v"/>
 	</PROJECT>
 </LOG_ROOT>

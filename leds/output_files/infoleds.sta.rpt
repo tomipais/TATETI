@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for infoleds
-Mon Nov 24 23:23:17 2025
+Thu Nov 27 16:52:26 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,52 +17,42 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Setup: 'clock'
- 13. Slow 1200mV 85C Model Hold: 'clock'
- 14. Slow 1200mV 85C Model Minimum Pulse Width: 'clock'
- 15. Slow 1200mV 85C Model Minimum Pulse Width: 'inclk0'
- 16. Clock to Output Times
- 17. Minimum Clock to Output Times
- 18. Slow 1200mV 85C Model Metastability Report
- 19. Slow 1200mV 0C Model Fmax Summary
- 20. Slow 1200mV 0C Model Setup Summary
- 21. Slow 1200mV 0C Model Hold Summary
- 22. Slow 1200mV 0C Model Recovery Summary
- 23. Slow 1200mV 0C Model Removal Summary
- 24. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 25. Slow 1200mV 0C Model Setup: 'clock'
- 26. Slow 1200mV 0C Model Hold: 'clock'
- 27. Slow 1200mV 0C Model Minimum Pulse Width: 'clock'
- 28. Slow 1200mV 0C Model Minimum Pulse Width: 'inclk0'
- 29. Clock to Output Times
- 30. Minimum Clock to Output Times
- 31. Slow 1200mV 0C Model Metastability Report
- 32. Fast 1200mV 0C Model Setup Summary
- 33. Fast 1200mV 0C Model Hold Summary
- 34. Fast 1200mV 0C Model Recovery Summary
- 35. Fast 1200mV 0C Model Removal Summary
- 36. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 37. Fast 1200mV 0C Model Setup: 'clock'
- 38. Fast 1200mV 0C Model Hold: 'clock'
- 39. Fast 1200mV 0C Model Minimum Pulse Width: 'clock'
- 40. Fast 1200mV 0C Model Minimum Pulse Width: 'inclk0'
- 41. Clock to Output Times
- 42. Minimum Clock to Output Times
- 43. Fast 1200mV 0C Model Metastability Report
- 44. Multicorner Timing Analysis Summary
- 45. Clock to Output Times
- 46. Minimum Clock to Output Times
- 47. Board Trace Model Assignments
- 48. Input Transition Times
- 49. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 50. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 51. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 52. Setup Transfers
- 53. Hold Transfers
- 54. Report TCCS
- 55. Report RSKM
- 56. Unconstrained Paths
- 57. TimeQuest Timing Analyzer Messages
+ 12. Slow 1200mV 85C Model Minimum Pulse Width: 'inclk0'
+ 13. Clock to Output Times
+ 14. Minimum Clock to Output Times
+ 15. Slow 1200mV 85C Model Metastability Report
+ 16. Slow 1200mV 0C Model Fmax Summary
+ 17. Slow 1200mV 0C Model Setup Summary
+ 18. Slow 1200mV 0C Model Hold Summary
+ 19. Slow 1200mV 0C Model Recovery Summary
+ 20. Slow 1200mV 0C Model Removal Summary
+ 21. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 22. Slow 1200mV 0C Model Minimum Pulse Width: 'inclk0'
+ 23. Clock to Output Times
+ 24. Minimum Clock to Output Times
+ 25. Slow 1200mV 0C Model Metastability Report
+ 26. Fast 1200mV 0C Model Setup Summary
+ 27. Fast 1200mV 0C Model Hold Summary
+ 28. Fast 1200mV 0C Model Recovery Summary
+ 29. Fast 1200mV 0C Model Removal Summary
+ 30. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 31. Fast 1200mV 0C Model Minimum Pulse Width: 'inclk0'
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Fast 1200mV 0C Model Metastability Report
+ 35. Multicorner Timing Analysis Summary
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Board Trace Model Assignments
+ 39. Input Transition Times
+ 40. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 41. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 42. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 43. Clock Transfers
+ 44. Report TCCS
+ 45. Report RSKM
+ 46. Unconstrained Paths
+ 47. TimeQuest Timing Analyzer Messages
 
 
 
@@ -109,26 +99,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                                                                                                                  ;
-+--------------------------------------------------+-----------+----------+------------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
-; Clock Name                                       ; Type      ; Period   ; Frequency  ; Rise  ; Fall    ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source                                             ; Targets                                              ;
-+--------------------------------------------------+-----------+----------+------------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
-; clock                                            ; Base      ; 1.000    ; 1000.0 MHz ; 0.000 ; 0.500   ;            ;           ;             ;       ;        ;           ;            ;          ;        ;                                                    ; { clock }                                            ;
-; inclk0                                           ; Base      ; 20.000   ; 50.0 MHz   ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;                                                    ; { inclk0 }                                           ;
-; inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 1250.000 ; 0.8 MHz    ; 0.000 ; 400.000 ; 32.00      ; 125       ; 2           ;       ;        ;           ;            ; false    ; inclk0 ; inst|altpll_component|auto_generated|pll1|inclk[0] ; { inst|altpll_component|auto_generated|pll1|clk[0] } ;
-; inst|altpll_component|auto_generated|pll1|clk[1] ; Generated ; 1250.000 ; 0.8 MHz    ; 0.000 ; 800.000 ; 64.00      ; 125       ; 2           ;       ;        ;           ;            ; false    ; inclk0 ; inst|altpll_component|auto_generated|pll1|inclk[0] ; { inst|altpll_component|auto_generated|pll1|clk[1] } ;
-+--------------------------------------------------+-----------+----------+------------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                                                 ;
++--------------------------------------------------+-----------+----------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
+; Clock Name                                       ; Type      ; Period   ; Frequency ; Rise  ; Fall    ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source                                             ; Targets                                              ;
++--------------------------------------------------+-----------+----------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
+; inclk0                                           ; Base      ; 20.000   ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;                                                    ; { inclk0 }                                           ;
+; inst|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 1250.000 ; 0.8 MHz   ; 0.000 ; 400.000 ; 32.00      ; 125       ; 2           ;       ;        ;           ;            ; false    ; inclk0 ; inst|altpll_component|auto_generated|pll1|inclk[0] ; { inst|altpll_component|auto_generated|pll1|clk[0] } ;
+; inst|altpll_component|auto_generated|pll1|clk[1] ; Generated ; 1250.000 ; 0.8 MHz   ; 0.000 ; 800.000 ; 64.00      ; 125       ; 2           ;       ;        ;           ;            ; false    ; inclk0 ; inst|altpll_component|auto_generated|pll1|inclk[0] ; { inst|altpll_component|auto_generated|pll1|clk[1] } ;
++--------------------------------------------------+-----------+----------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+----------------------------------------------------+------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                        ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 931.97 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
 
 
 ----------------------------------
@@ -137,22 +122,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+-------------------------------------+
+---------------------------------------
 ; Slow 1200mV 85C Model Setup Summary ;
-+-------+--------+--------------------+
-; Clock ; Slack  ; End Point TNS      ;
-+-------+--------+--------------------+
-; clock ; -0.073 ; -0.073             ;
-+-------+--------+--------------------+
+---------------------------------------
+No paths to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Slow 1200mV 85C Model Hold Summary ;
-+-------+--------+-------------------+
-; Clock ; Slack  ; End Point TNS     ;
-+-------+--------+-------------------+
-; clock ; -1.343 ; -1.343            ;
-+-------+--------+-------------------+
+--------------------------------------
+No paths to report.
 
 
 ------------------------------------------
@@ -169,56 +148,11 @@ No paths to report.
 
 +---------------------------------------------------+
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
-+--------+--------+---------------------------------+
-; Clock  ; Slack  ; End Point TNS                   ;
-+--------+--------+---------------------------------+
-; clock  ; -3.000 ; -4.000                          ;
-; inclk0 ; 9.834  ; 0.000                           ;
-+--------+--------+---------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'clock'                                                                                                                                                        ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; -0.073 ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 1.000        ; -0.066     ; 1.022      ;
-; 1.519  ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 4.597      ; 4.063      ;
-; 1.539  ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 4.597      ; 4.043      ;
-; 1.633  ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 4.597      ; 3.949      ;
-; 1.655  ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 4.597      ; 3.927      ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'clock'                                                                                                                                                         ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; -1.343 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 4.911      ; 3.755      ;
-; -1.330 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 4.911      ; 3.768      ;
-; -1.266 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 4.911      ; 3.832      ;
-; -1.258 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 4.911      ; 3.840      ;
-; 0.684  ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 0.000        ; 0.066      ; 0.907      ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width: 'clock'                                                     ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clock ; Rise       ; clock                 ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.179  ; 0.363        ; 0.184          ; Low Pulse Width  ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.335  ; 0.335        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|o         ;
-; 0.339  ; 0.339        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; inst1|fstate|clk      ;
-; 0.420  ; 0.636        ; 0.216          ; High Pulse Width ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|i         ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|i         ;
-; 0.658  ; 0.658        ; 0.000          ; High Pulse Width ; clock ; Rise       ; inst1|fstate|clk      ;
-; 0.665  ; 0.665        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|o         ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
++--------+-------+----------------------------------+
+; Clock  ; Slack ; End Point TNS                    ;
++--------+-------+----------------------------------+
+; inclk0 ; 9.834 ; 0.000                            ;
++--------+-------+----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -247,11 +181,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 5.537 ; 5.469 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 3.343 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 3.329 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 3.245 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 3.200 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 3.623 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 3.628 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 3.509 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 3.487 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -260,11 +193,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 5.218 ; 5.276 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 2.867 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 2.854 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 2.775 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 2.731 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 3.135 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 3.142 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 3.029 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 3.006 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -274,32 +206,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                          ;
-+-------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+-------------+-----------------+------------+---------------------------------------------------------------+
-; 1054.85 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-------------+-----------------+------------+---------------------------------------------------------------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Slow 1200mV 0C Model Setup Summary ;
-+-------+-------+--------------------+
-; Clock ; Slack ; End Point TNS      ;
-+-------+-------+--------------------+
-; clock ; 0.052 ; 0.000              ;
-+-------+-------+--------------------+
+--------------------------------------
+No paths to report.
 
 
-+-----------------------------------+
+-------------------------------------
 ; Slow 1200mV 0C Model Hold Summary ;
-+-------+--------+------------------+
-; Clock ; Slack  ; End Point TNS    ;
-+-------+--------+------------------+
-; clock ; -1.198 ; -1.198           ;
-+-------+--------+------------------+
+-------------------------------------
+No paths to report.
 
 
 -----------------------------------------
@@ -316,56 +238,11 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
-+--------+--------+--------------------------------+
-; Clock  ; Slack  ; End Point TNS                  ;
-+--------+--------+--------------------------------+
-; clock  ; -3.000 ; -4.000                         ;
-; inclk0 ; 9.817  ; 0.000                          ;
-+--------+--------+--------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'clock'                                                                                                                                                        ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; 0.052 ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 1.000        ; -0.056     ; 0.907      ;
-; 1.465 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 4.084      ; 3.604      ;
-; 1.482 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 4.084      ; 3.587      ;
-; 1.567 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 4.084      ; 3.502      ;
-; 1.576 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 4.084      ; 3.493      ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'clock'                                                                                                                                                          ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; -1.198 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 4.359      ; 3.335      ;
-; -1.184 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 4.359      ; 3.349      ;
-; -1.134 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 4.359      ; 3.399      ;
-; -1.130 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 4.359      ; 3.403      ;
-; 0.626  ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 0.000        ; 0.056      ; 0.826      ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width: 'clock'                                                      ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clock ; Rise       ; clock                 ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.358  ; 0.358        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|o         ;
-; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; inst1|fstate|clk      ;
-; 0.382  ; 0.598        ; 0.216          ; High Pulse Width ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|i         ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|i         ;
-; 0.622  ; 0.622        ; 0.000          ; High Pulse Width ; clock ; Rise       ; inst1|fstate|clk      ;
-; 0.642  ; 0.642        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|o         ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
++--------+-------+---------------------------------+
+; Clock  ; Slack ; End Point TNS                   ;
++--------+-------+---------------------------------+
+; inclk0 ; 9.817 ; 0.000                           ;
++--------+-------+---------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -394,11 +271,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 4.989 ; 4.923 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 3.041 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 3.002 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 2.953 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 2.883 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 3.295 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 3.266 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 3.195 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 3.136 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -407,11 +283,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 4.713 ; 4.737 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 2.608 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 2.569 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 2.525 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 2.457 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 2.852 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 2.822 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 2.757 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 2.700 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -421,22 +296,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Fast 1200mV 0C Model Setup Summary ;
-+-------+-------+--------------------+
-; Clock ; Slack ; End Point TNS      ;
-+-------+-------+--------------------+
-; clock ; 0.409 ; 0.000              ;
-+-------+-------+--------------------+
+--------------------------------------
+No paths to report.
 
 
-+-----------------------------------+
+-------------------------------------
 ; Fast 1200mV 0C Model Hold Summary ;
-+-------+--------+------------------+
-; Clock ; Slack  ; End Point TNS    ;
-+-------+--------+------------------+
-; clock ; -0.797 ; -0.797           ;
-+-------+--------+------------------+
+-------------------------------------
+No paths to report.
 
 
 -----------------------------------------
@@ -453,56 +322,11 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
-+--------+--------+--------------------------------+
-; Clock  ; Slack  ; End Point TNS                  ;
-+--------+--------+--------------------------------+
-; clock  ; -3.000 ; -4.080                         ;
-; inclk0 ; 9.584  ; 0.000                          ;
-+--------+--------+--------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'clock'                                                                                                                                                        ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; 0.409 ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 1.000        ; -0.038     ; 0.560      ;
-; 1.264 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 2.702      ; 2.415      ;
-; 1.280 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 1.000        ; 2.702      ; 2.399      ;
-; 1.314 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 2.702      ; 2.365      ;
-; 1.375 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 1.000        ; 2.702      ; 2.304      ;
-+-------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'clock'                                                                                                                                                          ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                                        ; To Node               ; Launch Clock                                     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-; -0.797 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 2.891      ; 2.208      ;
-; -0.745 ; inst|altpll_component|auto_generated|pll1|clk[1] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[1] ; clock       ; 0.000        ; 2.891      ; 2.260      ;
-; -0.740 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 2.891      ; 2.265      ;
-; -0.708 ; inst|altpll_component|auto_generated|pll1|clk[0] ; infoleds:inst1|fstate ; inst|altpll_component|auto_generated|pll1|clk[0] ; clock       ; 0.000        ; 2.891      ; 2.297      ;
-; 0.359  ; infoleds:inst1|fstate                            ; infoleds:inst1|fstate ; clock                                            ; clock       ; 0.000        ; 0.038      ; 0.481      ;
-+--------+--------------------------------------------------+-----------------------+--------------------------------------------------+-------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width: 'clock'                                                      ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
-; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clock ; Rise       ; clock                 ;
-; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clock ; Rise       ; infoleds:inst1|fstate ;
-; -0.080 ; 0.104        ; 0.184          ; Low Pulse Width  ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.098  ; 0.098        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; inst1|fstate|clk      ;
-; 0.120  ; 0.120        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|o         ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|i         ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~input|i         ;
-; 0.680  ; 0.896        ; 0.216          ; High Pulse Width ; clock ; Rise       ; infoleds:inst1|fstate ;
-; 0.880  ; 0.880        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~input|o         ;
-; 0.900  ; 0.900        ; 0.000          ; High Pulse Width ; clock ; Rise       ; inst1|fstate|clk      ;
-+--------+--------------+----------------+------------------+-------+------------+-----------------------+
++--------+-------+---------------------------------+
+; Clock  ; Slack ; End Point TNS                   ;
++--------+-------+---------------------------------+
+; inclk0 ; 9.584 ; 0.000                           ;
++--------+-------+---------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -531,11 +355,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 3.162 ; 3.176 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 1.930 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 2.011 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 1.875 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 1.942 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 2.101 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 2.204 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 2.037 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 2.129 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -544,11 +367,10 @@ No paths to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 2.959 ; 3.046 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 1.648 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 1.726 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 1.595 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 1.661 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 1.812 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 1.912 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 1.750 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 1.840 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -558,18 +380,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                           ;
-+------------------+--------+--------+----------+---------+---------------------+
-; Clock            ; Setup  ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+--------+--------+----------+---------+---------------------+
-; Worst-case Slack ; -0.073 ; -1.343 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; -0.073 ; -1.343 ; N/A      ; N/A     ; -3.000              ;
-;  inclk0          ; N/A    ; N/A    ; N/A      ; N/A     ; 9.584               ;
-; Design-wide TNS  ; -0.073 ; -1.343 ; 0.0      ; 0.0     ; -4.08               ;
-;  clock           ; -0.073 ; -1.343 ; N/A      ; N/A     ; -4.080              ;
-;  inclk0          ; N/A    ; N/A    ; N/A      ; N/A     ; 0.000               ;
-+------------------+--------+--------+----------+---------+---------------------+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; 9.584               ;
+;  inclk0          ; N/A   ; N/A  ; N/A      ; N/A     ; 9.584               ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
+;  inclk0          ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
++------------------+-------+------+----------+---------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -577,11 +397,10 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 5.537 ; 5.469 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 3.343 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 3.329 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 3.245 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 3.200 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 3.623 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 3.628 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 3.509 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 3.487 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -590,11 +409,10 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                  ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
-; y         ; clock      ; 2.959 ; 3.046 ; Rise       ; clock                                            ;
-; y         ; inclk0     ; 1.648 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ;       ; 1.726 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
-; y         ; inclk0     ; 1.595 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
-; y         ; inclk0     ;       ; 1.661 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ; 1.812 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ;       ; 1.912 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[0] ;
+; y         ; inclk0     ; 1.750 ;       ; Rise       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
+; y         ; inclk0     ;       ; 1.840 ; Fall       ; inst|altpll_component|auto_generated|pll1|clk[1] ;
 +-----------+------------+-------+-------+------------+--------------------------------------------------+
 
 
@@ -616,7 +434,6 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; areset                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; inclk0                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; clock                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -656,28 +473,10 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                         ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-; From Clock                                       ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-; clock                                            ; clock    ; 1        ; 0        ; 0        ; 0        ;
-; inst|altpll_component|auto_generated|pll1|clk[0] ; clock    ; 1        ; 1        ; 0        ; 0        ;
-; inst|altpll_component|auto_generated|pll1|clk[1] ; clock    ; 1        ; 1        ; 0        ; 0        ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                          ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-; From Clock                                       ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-; clock                                            ; clock    ; 1        ; 0        ; 0        ; 0        ;
-; inst|altpll_component|auto_generated|pll1|clk[0] ; clock    ; 1        ; 1        ; 0        ; 0        ;
-; inst|altpll_component|auto_generated|pll1|clk[1] ; clock    ; 1        ; 1        ; 0        ; 0        ;
-+--------------------------------------------------+----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
 
 
 ---------------
@@ -702,7 +501,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 1     ; 1    ;
 ; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 3     ; 3    ;
 +---------------------------------+-------+------+
 
 
@@ -712,7 +511,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 24 23:23:15 2025
+    Info: Processing started: Thu Nov 27 16:52:23 2025
 Info: Command: quartus_sta infoleds -c infoleds
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -726,75 +525,49 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 125 -multiply_by 2 -duty_cycle 32.00 -name {inst|altpll_component|auto_generated|pll1|clk[0]} {inst|altpll_component|auto_generated|pll1|clk[0]}
     Info (332110): create_generated_clock -source {inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 125 -multiply_by 2 -duty_cycle 64.00 -name {inst|altpll_component|auto_generated|pll1|clk[1]} {inst|altpll_component|auto_generated|pll1|clk[1]}
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name clock clock
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.073
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.073        -0.073 clock 
-Info (332146): Worst-case hold slack is -1.343
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.343        -1.343 clock 
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
+Info (332146): Worst-case minimum pulse width slack is 9.834
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.000        -4.000 clock 
     Info (332119):     9.834         0.000 inclk0 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.052
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.052         0.000 clock 
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case hold slack is -1.198
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.198        -1.198 clock 
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
+Info (332146): Worst-case minimum pulse width slack is 9.817
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.000        -4.000 clock 
     Info (332119):     9.817         0.000 inclk0 
 Info: Analyzing Fast 1200mV 0C Model
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.409
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.409         0.000 clock 
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case hold slack is -0.797
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.797        -0.797 clock 
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
+Info (332146): Worst-case minimum pulse width slack is 9.584
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.000        -4.080 clock 
     Info (332119):     9.584         0.000 inclk0 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Mon Nov 24 23:23:17 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Thu Nov 27 16:52:26 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
