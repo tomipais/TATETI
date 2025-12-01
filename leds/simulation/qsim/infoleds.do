@@ -2,9 +2,9 @@ onerror {quit -f}
 vlib work
 vlog -work work infoleds.vo
 vlog -work work infoleds.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.salidaserie_vlg_vec_tst
+vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.contador_384_vlg_vec_tst
 vcd file -direction infoleds.msim.vcd
-vcd add -internal salidaserie_vlg_vec_tst/*
-vcd add -internal salidaserie_vlg_vec_tst/i1/*
+vcd add -internal contador_384_vlg_vec_tst/*
+vcd add -internal contador_384_vlg_vec_tst/i1/*
 add wave /*
 run -all

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for infoleds
-Mon Dec 01 13:49:38 2025
+Mon Dec 01 18:03:02 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,12 +14,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: altpll0:inst|altpll:altpll_component
- 12. altpll Parameter Settings by Entity Instance
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. State Machine - |Block1|maqpulso:inst13|fstate
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: altpll0:inst|altpll:altpll_component
+ 14. altpll Parameter Settings by Entity Instance
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +47,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 01 13:49:37 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 01 18:03:02 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; infoleds                                        ;
 ; Top-level Entity Name              ; Block1                                          ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 408                                             ;
-;     Total combinational functions  ; 407                                             ;
-;     Dedicated logic registers      ; 395                                             ;
-; Total registers                    ; 395                                             ;
-; Total pins                         ; 16                                              ;
+; Total logic elements               ; 406                                             ;
+;     Total combinational functions  ; 404                                             ;
+;     Dedicated logic registers      ; 397                                             ;
+; Total registers                    ; 397                                             ;
+; Total pins                         ; 15                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -160,58 +162,59 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; altpll0.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/altpll0.vhd         ;         ;
-; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/Block1.bdf          ;         ;
-; mux2.vhd                         ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/mux2.vhd            ;         ;
-; muxgrande.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/muxgrande.vhd       ;         ;
-; contador_384.vhd                 ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/contador_384.vhd    ;         ;
-; salidaserie.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/salidaserie.vhd     ;         ;
-; ledtest.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/ledtest.vhd         ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                            ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                        ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                       ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc                     ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc                     ;         ;
-; db/altpll0_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/db/altpll0_altpll.v ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; output_files/maqpulso.vhd        ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/output_files/maqpulso.vhd ;         ;
+; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/Block1.bdf                ;         ;
+; altpll0.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/altpll0.vhd               ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/mux2.vhd                  ;         ;
+; muxgrande.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/muxgrande.vhd             ;         ;
+; contador_384.vhd                 ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/contador_384.vhd          ;         ;
+; salidaserie.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/salidaserie.vhd           ;         ;
+; ledtest.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/ledtest.vhd               ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                                  ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                              ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                             ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc                           ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc                           ;         ;
+; db/altpll0_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Usuario/Documents/Facultad/TyDD2/Proyectofinal/TATETI/leds/db/altpll0_altpll.v       ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                       ;
-+---------------------------------------------+-------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                               ;
-+---------------------------------------------+-------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 408                                                                                 ;
-;                                             ;                                                                                     ;
-; Total combinational functions               ; 407                                                                                 ;
-; Logic element usage by number of LUT inputs ;                                                                                     ;
-;     -- 4 input functions                    ; 12                                                                                  ;
-;     -- 3 input functions                    ; 384                                                                                 ;
-;     -- <=2 input functions                  ; 11                                                                                  ;
-;                                             ;                                                                                     ;
-; Logic elements by mode                      ;                                                                                     ;
-;     -- normal mode                          ; 399                                                                                 ;
-;     -- arithmetic mode                      ; 8                                                                                   ;
-;                                             ;                                                                                     ;
-; Total registers                             ; 395                                                                                 ;
-;     -- Dedicated logic registers            ; 395                                                                                 ;
-;     -- I/O registers                        ; 0                                                                                   ;
-;                                             ;                                                                                     ;
-; I/O pins                                    ; 16                                                                                  ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                                   ;
-; Total PLLs                                  ; 1                                                                                   ;
-;     -- PLLs                                 ; 1                                                                                   ;
-;                                             ;                                                                                     ;
-; Maximum fan-out node                        ; altpll0:inst|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 782                                                                                 ;
-; Total fan-out                               ; 2828                                                                                ;
-; Average fan-out                             ; 3.39                                                                                ;
-+---------------------------------------------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 406      ;
+;                                             ;          ;
+; Total combinational functions               ; 404      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 6        ;
+;     -- 3 input functions                    ; 387      ;
+;     -- <=2 input functions                  ; 11       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 397      ;
+;     -- arithmetic mode                      ; 7        ;
+;                                             ;          ;
+; Total registers                             ; 397      ;
+;     -- Dedicated logic registers            ; 397      ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 15       ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Total PLLs                                  ; 1        ;
+;     -- PLLs                                 ; 1        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; IN~input ;
+; Maximum fan-out                             ; 783      ;
+; Total fan-out                               ; 2815     ;
+; Average fan-out                             ; 3.38     ;
++---------------------------------------------+----------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -219,11 +222,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
-; |Block1                                  ; 407 (1)           ; 395 (0)      ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Block1                                                                    ; work         ;
+; |Block1                                  ; 404 (1)           ; 397 (0)      ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Block1                                                                    ; work         ;
 ;    |altpll0:inst|                        ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|altpll0:inst                                                       ; work         ;
 ;       |altpll:altpll_component|          ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|altpll0:inst|altpll:altpll_component                               ; work         ;
 ;          |altpll0_altpll:auto_generated| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|altpll0:inst|altpll:altpll_component|altpll0_altpll:auto_generated ; work         ;
-;    |contador_384:inst3|                  ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|contador_384:inst3                                                 ; work         ;
+;    |contador_384:inst3|                  ; 15 (15)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|contador_384:inst3                                                 ; work         ;
+;    |maqpulso:inst13|                     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|maqpulso:inst13                                                    ; work         ;
 ;    |mux2:inst4|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|mux2:inst4                                                         ; work         ;
 ;    |salidaserie:inst9|                   ; 385 (385)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Block1|salidaserie:inst9                                                  ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
@@ -239,17 +243,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------------------------------------------+
 
 
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |Block1|maqpulso:inst13|fstate                   ;
++-------------------+-------------------+------------+-------------+
+; Name              ; fstate.ceroeterno ; fstate.uno ; fstate.cero ;
++-------------------+-------------------+------------+-------------+
+; fstate.cero       ; 0                 ; 0          ; 0           ;
+; fstate.uno        ; 0                 ; 1          ; 1           ;
+; fstate.ceroeterno ; 1                 ; 0          ; 1           ;
++-------------------+-------------------+------------+-------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; maqpulso:inst13|fstate.ceroeterno     ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 395   ;
+; Total registers                              ; 397   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 395   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 392   ;
+; Number of registers using Clock Enable       ; 391   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -259,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 3:1                ; 383 bits  ; 766 LEs       ; 383 LEs              ; 383 LEs                ; Yes        ; |Block1|salidaserie:inst9|sr[38] ;
+; 3:1                ; 383 bits  ; 766 LEs       ; 383 LEs              ; 383 LEs                ; Yes        ; |Block1|salidaserie:inst9|sr[43] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
@@ -669,17 +695,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 01 13:49:36 2025
+    Info: Processing started: Mon Dec 01 18:03:00 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off infoleds -c infoleds
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file output_files/maqpulso.vhd
+    Info (12022): Found design unit 1: maqpulso-BEHAVIOR
+    Info (12023): Found entity 1: maqpulso
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+    Info (12023): Found entity 1: Block1
 Info (12021): Found 2 design units, including 1 entities, in source file infoleds.vhd
     Info (12022): Found design unit 1: infoleds-BEHAVIOR
     Info (12023): Found entity 1: infoleds
 Info (12021): Found 2 design units, including 1 entities, in source file altpll0.vhd
     Info (12022): Found design unit 1: altpll0-SYN
     Info (12023): Found entity 1: altpll0
-Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
-    Info (12023): Found entity 1: Block1
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
     Info (12022): Found design unit 1: mux2-rtl
     Info (12023): Found entity 1: mux2
@@ -772,19 +801,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
 Info (12128): Elaborating entity "altpll0_altpll" for hierarchy "altpll0:inst|altpll:altpll_component|altpll0_altpll:auto_generated"
 Info (12128): Elaborating entity "salidaserie" for hierarchy "salidaserie:inst9"
 Info (12128): Elaborating entity "contador_384" for hierarchy "contador_384:inst3"
+Info (12128): Elaborating entity "maqpulso" for hierarchy "maqpulso:inst13"
 Info (12128): Elaborating entity "muxgrande" for hierarchy "muxgrande:aa"
 Info (12128): Elaborating entity "ledtest" for hierarchy "ledtest:test"
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 425 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 408 logic cells
+Info (21057): Implemented 422 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 406 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4635 megabytes
-    Info: Processing ended: Mon Dec 01 13:49:38 2025
+    Info: Processing ended: Mon Dec 01 18:03:02 2025
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

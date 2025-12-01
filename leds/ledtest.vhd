@@ -25,22 +25,22 @@ end entity;
 architecture rtl of ledtest is
 
     -- Colores configurables (en formato RGB)
-    constant led0  : std_logic_vector(23 downto 0) := X"FF0000"; -- Rojo
-    constant led1  : std_logic_vector(23 downto 0) := X"00FF00"; -- Verde
-    constant led2  : std_logic_vector(23 downto 0) := X"0000FF"; -- Azul
-    constant led3  : std_logic_vector(23 downto 0) := X"FFFFFF"; -- Blanco
-    constant led4  : std_logic_vector(23 downto 0) := X"FFFF00"; -- Amarillo
-    constant led5  : std_logic_vector(23 downto 0) := X"FF00FF"; -- Magenta
-    constant led6  : std_logic_vector(23 downto 0) := X"00FFFF"; -- Cian
-    constant led7  : std_logic_vector(23 downto 0) := X"000000"; -- Negro (apagado)
-    constant led8  : std_logic_vector(23 downto 0) := X"AA0000";
-    constant led9  : std_logic_vector(23 downto 0) := X"00AA00";
-    constant led10 : std_logic_vector(23 downto 0) := X"0000AA";
-    constant led11 : std_logic_vector(23 downto 0) := X"808000";
-    constant led12 : std_logic_vector(23 downto 0) := X"808080";
-    constant led13 : std_logic_vector(23 downto 0) := X"A0A0A0";
-    constant led14 : std_logic_vector(23 downto 0) := X"101010";
-    constant led15 : std_logic_vector(23 downto 0) := X"202020";
+    constant led0  : std_logic_vector(23 downto 0) := "111100001111111100000000"; -- Rojo
+    constant led1  : std_logic_vector(23 downto 0) := "000000001111111100000000"; -- Verde
+    constant led2  : std_logic_vector(23 downto 0) := "000000001111111100000000"; -- Azul
+    constant led3  : std_logic_vector(23 downto 0) := "000000001111111100000000"; -- Blanco
+    constant led4  : std_logic_vector(23 downto 0) := "000000001111111110101010"; -- Amarillo
+    constant led5  : std_logic_vector(23 downto 0) := "000000001001111100000000"; -- Magenta
+    constant led6  : std_logic_vector(23 downto 0) := "000000001111111100000000"; -- Cian
+    constant led7  : std_logic_vector(23 downto 0) := "000000001111111100000000"; -- Negro (apagado)
+    constant led8  : std_logic_vector(23 downto 0) := "100101111111101100000000";
+    constant led9  : std_logic_vector(23 downto 0) := "000000001111111100000000";
+    constant led10 : std_logic_vector(23 downto 0) := "000000001111111100000000";
+    constant led11 : std_logic_vector(23 downto 0) := "000000001111111100000000";
+    constant led12 : std_logic_vector(23 downto 0) := "000000001111111100000000";
+    constant led13 : std_logic_vector(23 downto 0) := "000000001111111100000000";
+    constant led14 : std_logic_vector(23 downto 0) := "000000001111101100000000";
+    constant led15 : std_logic_vector(23 downto 0) := "000000001111111100000000";
 
 begin
 

@@ -1,0 +1,6 @@
+
+State Machine - |Block1|maqpulso:inst13|fstate
+Name fstate.ceroeterno fstate.uno fstate.cero 
+fstate.cero 0 0 0 
+fstate.uno 0 1 1 
+fstate.ceroeterno 1 0 1 
