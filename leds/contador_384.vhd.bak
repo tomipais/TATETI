@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity contador_384 is
+    port (
+        clk    : in  std_logic;
+        reset  : in  std_logic;
+        enable : in  std_logic;
+        count  : out unsigned(8 downto 0)  -- 9 bits: 0 a 383
+    );
+end entity;
+
+architecture comportamiento of contador_384 is
+    signal cnt : unsigned(8 downto 0) := (others => '0');
+begin
+
+    process (clk, reset)
+    begin
+        if reset = '1' then
+            cnt <= (others => '0');
+        elsif rising_edge(clk) then
+            if enable = '1' then
+                if cnt = 383 then
+                    cnt <= (others => '0');  --vuelve a 0 automáticamente
+                else
+                    cnt <= cnt + 1;
+                end if;
+            end if;
+        end if;
+    end process;
+
+    count <= cnt;
+
+end rtl;

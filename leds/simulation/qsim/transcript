@@ -2,25 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mux2
+# -- Compiling module salidaserie
 # 
 # Top level modules:
-# 	mux2
+# 	salidaserie
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mux2_vlg_sample_tst
-# -- Compiling module mux2_vlg_check_tst
-# -- Compiling module mux2_vlg_vec_tst
+# -- Compiling module salidaserie_vlg_sample_tst
+# -- Compiling module salidaserie_vlg_check_tst
+# -- Compiling module salidaserie_vlg_vec_tst
 # 
 # Top level modules:
-# 	mux2_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.mux2_vlg_vec_tst 
-# Loading work.mux2_vlg_vec_tst
-# Loading work.mux2
-# Loading cycloneive_ver.cycloneive_io_obuf
+# 	salidaserie_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.salidaserie_vlg_vec_tst 
+# Loading work.salidaserie_vlg_vec_tst
+# Loading work.salidaserie
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading work.mux2_vlg_sample_tst
-# Loading work.mux2_vlg_check_tst
+# Loading altera_ver.dffeas
+# Loading work.salidaserie_vlg_sample_tst
+# Loading work.salidaserie_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : infoleds.vt(152)
-#    Time: 1 us  Iteration: 0  Instance: /mux2_vlg_vec_tst/tb_out
+# ** Note: $finish    : infoleds.vt(156)
+#    Time: 100 us  Iteration: 0  Instance: /salidaserie_vlg_vec_tst/tb_out
